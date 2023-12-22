@@ -1,0 +1,43 @@
+main {
+    display: flex;
+    padding: 37px 100px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #141D2F;
+
+    img {
+        height: 30px;
+
+        animation: rotate360 10s linear infinite;
+    }
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 46px;
+
+        a {
+            color: #FFFFFF;
+            font-family: Poppins;
+            font-size: 23px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 120%;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+}
+
+@keyframes rotate360 {
+    0% {
+      transform: rotateY(0deg);
+    }
+    30% {
+      transform: rotateY(360deg);
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
