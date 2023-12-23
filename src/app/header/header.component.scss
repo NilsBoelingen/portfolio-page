@@ -7,6 +7,7 @@ main {
 
     img {
         height: 30px;
+        cursor: url('/assets/img/icons8-mauszeiger-pointer.svg'), auto;
 
         animation: rotate360 10s linear infinite;
     }
@@ -25,7 +26,11 @@ main {
             font-weight: 400;
             line-height: 120%;
             text-decoration: none;
-            cursor: pointer;
+            cursor: url('/assets/img/icons8-mauszeiger-pointer.svg'), auto;
+
+            &:hover {
+              color: #FA7902;
+            }
         }
     }
 }

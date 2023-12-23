@@ -1,0 +1,36 @@
+main {
+    position: relative;
+    padding: 148px 100px 0 100px;
+    background-color: #141D2F;
+    width: 100%;
+}
+
+h1 {
+    color: #FFFFFF;
+    font-family: Poppins;
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+span {
+    color: #FFFFFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.about {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    gap: 35px;
+}
+
+.about-me {
+    width: 471px;
+}
