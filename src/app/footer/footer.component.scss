@@ -2,10 +2,11 @@ main {
     position: relative;
     padding: 0 100px 0 100px;
     background-color: #141D2F;
-    height: 291px;
+    height: 287px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-top: 4px solid #FA7902;
 }
 
 .logo {
