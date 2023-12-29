@@ -43,6 +43,15 @@ input[type="email"] {
     border-radius: 10px;
     border: 1px solid #FF4747;
     background: #141D2F;
+    cursor: url('/assets/img/background/icons8-mauszeiger-pointer.svg'), auto;
+
+    &::placeholder {
+        color: #FFFFFF;
+    }
+
+    &:hover {
+        border: 1px solid #FA7902;
+    }
 }
 
 textarea {
@@ -55,6 +64,15 @@ textarea {
     border-radius: 10px;
     border: 1px solid #FF4747;
     background: #141D2F;
+    cursor: url('/assets/img/background/icons8-mauszeiger-pointer.svg'), auto;
+
+    &::placeholder {
+        color: #FFFFFF;
+    }
+
+    &:hover {
+        border: 1px solid #FA7902;
+    }
 }
 
 .input-area {
@@ -79,6 +97,7 @@ textarea {
             border-radius: 4px;
             display: grid;
             place-content: center;
+            cursor: url('/assets/img/background/icons8-mauszeiger-pointer.svg'), auto;
         }
 
         input[type="checkbox"]::before {      
@@ -103,6 +122,15 @@ textarea {
 
         span {
             display: flex;
+
+            a {
+                color: #FF4747;
+                cursor: url('/assets/img/background/icons8-mauszeiger-pointer.svg'), auto;
+            }
         }
     }
+}
+
+button {
+    cursor: url('/assets/img/background/icons8-mauszeiger-pointer.svg'), auto;
 }
