@@ -1,8 +1,9 @@
 main {
     position: relative;
-    padding: 0 100px 0 100px;
+    padding: 0 100px 180px 100px;
     background-color: #141D2F;
     display: flex;
+    justify-content: space-between;
 }
 
 h1 {
@@ -44,6 +45,12 @@ input[type="email"] {
     border: 1px solid #FF4747;
     background: #141D2F;
     cursor: url('/assets/img/background/icons8-mauszeiger-pointer.svg'), auto;
+    color: #FFFFFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
 
     &::placeholder {
         color: #FFFFFF;
@@ -51,6 +58,10 @@ input[type="email"] {
 
     &:hover {
         border: 1px solid #FA7902;
+    }
+
+    &:focus {
+        outline: 1px solid #FA7902;
     }
 }
 
@@ -65,6 +76,12 @@ textarea {
     border: 1px solid #FF4747;
     background: #141D2F;
     cursor: url('/assets/img/background/icons8-mauszeiger-pointer.svg'), auto;
+    color: #FFFFFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
 
     &::placeholder {
         color: #FFFFFF;
@@ -72,6 +89,10 @@ textarea {
 
     &:hover {
         border: 1px solid #FA7902;
+    }
+
+    &:focus {
+        outline: 1px solid #FA7902;
     }
 }
 
@@ -82,7 +103,13 @@ textarea {
 }
 
 .confirm-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 37px;
+
     div {
+        width: 100%;
         padding: 16px 0 12px 0;
         display: flex;
         gap: 8px;
@@ -98,27 +125,26 @@ textarea {
             display: grid;
             place-content: center;
             cursor: url('/assets/img/background/icons8-mauszeiger-pointer.svg'), auto;
+
+            &::before {
+                content: "";
+                width: 12px;
+                height: 12px;
+                transform: scale(0);
+                transition: 120ms transform ease-in-out;
+                box-shadow: inset 1em 1em #FF4747;
+                transform-origin: center;
+                clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+            }
+
+            &:checked::before {
+                transform: scale(1);
+            }
+
+            &:checked {
+                border: 1px solid #FF4747;
+            }
         }
-
-        input[type="checkbox"]::before {      
-            content: "";
-            width: 12px;
-            height: 12px;
-            transform: scale(0);
-            transition: 120ms transform ease-in-out;
-            box-shadow: inset 1em 1em #FF4747;
-            transform-origin: center;
-            clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
-          }
-
-          input[type="checkbox"]:checked::before {
-            transform: scale(1);
-          }
-
-          input[type="checkbox"]:checked {
-            border: 1px solid #FF4747;
-          }
-          
 
         span {
             display: flex;
@@ -126,11 +152,95 @@ textarea {
             a {
                 color: #FF4747;
                 cursor: url('/assets/img/background/icons8-mauszeiger-pointer.svg'), auto;
+
+                &:hover {
+                    text-decoration: underline;
+                }
             }
         }
     }
 }
 
 button {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    padding: 15px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #FA7902;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
     cursor: url('/assets/img/background/icons8-mauszeiger-pointer.svg'), auto;
+    color: #FFFFFF;
+    font-family: Poppins;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+
+    &:hover {
+        padding: 20px 40px;
+    }
+}
+
+.main-section {
+    width: 473px;
+
+    h1 {
+        margin-bottom: 85px;
+    }
+
+    h2 {
+        margin-bottom: 35px;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+}
+
+.form-section {
+    padding-top: 193px;
+}
+
+.line {
+    width: 50px;
+    height: 0px;
+    flex-shrink: 0;
+    border: 2px solid #FF4747;
+    position: absolute;
+    left: 0;
+    top: 54px;
+}
+
+.arrow-up {
+    display: flex;
+    width: 39px;
+    height: 39px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 41px;
+    border: 2px solid #FFFFFF;
+    position: absolute;
+    right: 100px;
+    bottom: 90px;
+    cursor: url('/assets/img/background/icons8-mauszeiger-pointer.svg'), auto;
+
+    &:hover {
+        border: 2px solid #FA7902;
+
+        svg {
+            g {
+                path {
+                    fill: #FA7902;
+                }
+            }
+        }
+    }
 }
