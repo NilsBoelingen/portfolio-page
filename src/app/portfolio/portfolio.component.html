@@ -5,6 +5,9 @@
             <h1 id="headline">Portfolio</h1>
             <div class="right-line" id="rightLine"></div>
         </div>
-        <span>This page is a sample of my work - please feel free to try them out.</span>
+        <span>This page is a sample of my work - please feel free to try them
+            out.</span>
     </section>
+    <app-portfolio-item *ngFor="let project of projects; let i = index"
+        [index]="i" [projects]="projects"></app-portfolio-item>
 </main>
