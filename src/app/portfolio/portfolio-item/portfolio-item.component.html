@@ -2,7 +2,9 @@
     <h1>{{ projects[index].titel }}</h1>
     <h2>{{ projects[index].Languages }}</h2>
     <span>{{ projects[index].describtion }}</span>
-    <button>Live test</button>
-    <button>Github</button>
+    <div>
+        <button class="live-test">Live test</button>
+        <button class="github">Github</button>
+    </div>
 </section>
 <img src="{{ projects[index].image }}" id="img{{ index }}">

@@ -1,6 +1,6 @@
 main {
     position: relative;
-    padding: 177px 0 243px 0;
+    padding: 177px 0 93px 0;
     background-color: #141D2F;
 }
 
@@ -29,6 +29,7 @@ section {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    padding-bottom: 116px;
 
     div {
         display: flex;
@@ -50,4 +51,13 @@ section {
     height: 0px;
     flex-shrink: 0;
     border: 2px solid #FF4747;
+}
+
+app-portfolio-item {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    align-items: end;
+    padding: 0 100px 150px 100px;
+    gap: 35px;
 }

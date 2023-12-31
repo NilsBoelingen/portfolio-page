@@ -1,0 +1,68 @@
+h1 {
+    color: #FF4747;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%
+}
+
+h2 {
+    color: #FA7902;
+    font-family: Poppins;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+span {
+    color: #FFFFFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+img {
+    height: 339px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+
+    div {
+        display: flex;
+        gap: 86px;
+        padding-top: 20px;
+
+        button {
+            display: flex;
+            padding: 15px 30px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            border-radius: 10px;
+            color: #FFFFFF;
+            font-family: Poppins;
+            font-size: 23px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 120%;
+        }
+    }
+}
+
+.live-test {
+    background-color: #FF4747;
+    border: none;
+}
+
+.github {
+    background-color: #141D2F;
+    border: 1px solid #FA7902;
+}
