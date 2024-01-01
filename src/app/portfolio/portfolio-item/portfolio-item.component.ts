@@ -1,11 +1,11 @@
-import { NgFor, NgForOf } from '@angular/common';
+import { NgClass, NgFor, NgForOf } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
 import { PortfolioComponent } from '../portfolio.component';
 
 @Component({
   selector: 'app-portfolio-item',
   standalone: true,
-  imports: [NgFor, NgForOf, PortfolioComponent],
+  imports: [NgFor, NgForOf, PortfolioComponent, NgClass],
   templateUrl: './portfolio-item.component.html',
   styleUrl: './portfolio-item.component.scss'
 })

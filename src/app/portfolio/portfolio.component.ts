@@ -54,7 +54,7 @@ export class PortfolioComponent {
   headlineGap: number = 42;
 
   constructor() {
-    setInterval(() => this.changeLineWidth(), 500);
+    setInterval(() => this.changeLineWidth(), 1000);
   }
 
   changeLineWidth() {

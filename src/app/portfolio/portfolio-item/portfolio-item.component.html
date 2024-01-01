@@ -1,4 +1,4 @@
-<section>
+<section [ngClass]="{'reverse': index % 2 === 1}">
     <h1>{{ projects[index].titel }}</h1>
     <h2>{{ projects[index].Languages }}</h2>
     <span>{{ projects[index].describtion }}</span>

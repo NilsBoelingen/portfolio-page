@@ -55,9 +55,18 @@ section {
 
 app-portfolio-item {
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: start;
     align-items: end;
+    justify-content: space-evenly;
     padding: 0 100px 150px 100px;
-    gap: 35px;
+    gap: 96px;
+
+    &:nth-child(even) {
+        flex-direction: row-reverse;
+        text-align: start;
+    }
+
+    &:nth-child(odd) {
+        flex-direction: row;
+        text-align: end;
+    }
 }
