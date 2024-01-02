@@ -16,37 +16,49 @@ export class PortfolioComponent {
       titel: "Join",
       Languages: "HTML | CSS | JavaScript",
       describtion: "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
-      image: "assets/img/portfolio/join.png"
+      image: "assets/img/portfolio/join.png",
+      test: "https://join.nils-boelingen.de/index.html",
+      github: "https://github.com/NilsBoelingen/Join",
     },
     {
-      titel: "Skarkie",
+      titel: "Sharkie",
       Languages: "HTML | CSS | JavaScript",
       describtion: "A simple Jump-and-Run game based on an object-oriented approach. Help sharkie to find coins and poison bottles to fight against the killer whale.",
-      image: "assets/img/portfolio/sharkie.png"
+      image: "assets/img/portfolio/sharkie.png",
+      test: "https://sharkie.nils-boelingen.de/index.html",
+      github: "https://github.com/NilsBoelingen/Sharkie",
     },
-    {
-      titel: "Simple CRM",
-      Languages: "Angular | Firebase",
-      describtion: "A very Simple Customer Relationship Management system working with CRUD functionality.",
-      image: "assets/img/portfolio/simple_crm.png"
-    },
+    // {
+    //   titel: "Simple CRM",
+    //   Languages: "Angular | Firebase",
+    //   describtion: "A very Simple Customer Relationship Management system working with CRUD functionality.",
+    //   image: "assets/img/portfolio/simple_crm.png",
+    // test: "",
+    // github: "",
+    // },
     {
       titel: "Pokédex",
       Languages: "HTML | CSS | JavaScript | Api",
       describtion: "Based on the PokéAPI a simple library that provides and catalogues pokemon information.",
-      image: "assets/img/portfolio/pokedex.png"
+      image: "assets/img/portfolio/pokedex.png",
+      test: "https://pokedex.nils-boelingen.de/index.html",
+      github: "https://github.com/NilsBoelingen/Pokedex",
     },
-    {
-      titel: "DA Bubble",
-      Languages: "HTML | CSS | JavaScript",
-      describtion: "A simple messanger inspired by Slack. Get and Post Messages to your Team or your friends.",
-      image: "assets/img/portfolio/da_bubble.png"
-    },
+    // {
+    //   titel: "DA Bubble",
+    //   Languages: "HTML | CSS | JavaScript",
+    //   describtion: "A simple messanger inspired by Slack. Get and Post Messages to your Team or your friends.",
+    //   image: "assets/img/portfolio/da_bubble.png",
+    // test: "",
+    // github: "",
+    // },
     {
       titel: "Ring of Fire",
       Languages: "Angular | Firebase | TypeScript",
       describtion: "A simple Card game based on the Popular drink game.",
-      image: "assets/img/portfolio/ring_of_fire.png"
+      image: "assets/img/portfolio/ring_of_fire.png",
+      test: "https://ringoffire.nils-boelingen.de/index.html",
+      github: "https://github.com/NilsBoelingen/ringoffire",
     },
   ]
 

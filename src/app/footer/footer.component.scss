@@ -16,6 +16,7 @@ main {
 
     img {
         height: 40px;
+        cursor: url('/assets/img/background/icons8-mauszeiger-pointer.svg'), auto;
     }
 
     a {
@@ -45,5 +46,11 @@ main {
     img {
         width: 30px;
         height: 30px;
+        cursor: url('/assets/img/background/icons8-mauszeiger-pointer.svg'), auto;
+        transition: transform 100ms ease-out;
+
+        &:hover {
+            transform: scale(1.33);
+        }
     }
 }

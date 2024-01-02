@@ -40,19 +40,28 @@ section {
         gap: 86px;
         padding-top: 20px;
 
-        button {
-            display: flex;
-            padding: 15px 30px;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            border-radius: 10px;
-            color: #FFFFFF;
-            font-family: Poppins;
-            font-size: 23px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 120%;
+        a {
+            text-decoration: none;
+            
+            button {
+                display: flex;
+                padding: 15px 30px;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                border-radius: 10px;
+                color: #FFFFFF;
+                font-family: Poppins;
+                font-size: 23px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 120%;
+                cursor: url('/assets/img/background/icons8-mauszeiger-pointer.svg'), auto;
+
+                &:hover {
+                    background-color: #FA7902;
+                }
+            }
         }
     }
 }
