@@ -91,6 +91,29 @@ button {
     border-radius: 10px;
     background: #FA7902;
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    cursor: url('/assets/img/background/icons8-mauszeiger-pointer.svg'), auto;
+    transition: transform 300ms ease-out;
+
+    span {
+        color: #FFFFFF;
+        font-family: Poppins;
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+        transition: transform 300ms ease-out;
+        cursor: url('/assets/img/background/icons8-mauszeiger-pointer.svg'), auto;
+    }
+
+    &:hover {
+        transform: scale(1.2);
+        transform-origin: center center;
+        background-color: #FF4747;
+
+        span {
+            transform: scale(0.833);
+        }
+    }
 }
 
 .line {
