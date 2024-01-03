@@ -10,21 +10,24 @@
         </div>
     </section>
     <section class="form-section">
-        <form action="onsubmit">
+        <form action="onsubmit" #contactForm>
             <div class="input-area">
-                <input type="text" placeholder="Your name" required>
-                <input type="email" placeholder="Your email" required>
-                <textarea name id cols="30" rows="10"
-                    placeholder="Your message" required></textarea>
+                <input type="text" class="input-name" name="name" placeholder="Your name" #name (blur)="checkNameEmpty()">
+                <img src="assets/img/contact/error.png" *ngIf="!nameValue">
+                <img src="assets/img/contact/accepted.png" *ngIf="nameValue">
+                <p *ngIf="!nameValue">Your name is required</p>
+                <input type="email" name="email" placeholder="Your email" #email (blur)="checkEmailEmpty()">
+                <textarea name="massage" cols="30" rows="10"
+                    placeholder="Your message" #massage (blur)="checkMassageEmpty()"></textarea>
             </div>
             <div class="confirm-area">
                 <div>
-                    <input type="checkbox" required>
+                    <input type="checkbox">
                     <span>I've read the &nbsp;<a> Privacy policy </a>&nbsp; and
                         agree to the
                         processing of my data as outlined.</span>
                 </div>
-                <button>Send message :&#041;</button>
+                <button type="submit">Send message :&#041;</button>
             </div>
         </form>
     </section>
