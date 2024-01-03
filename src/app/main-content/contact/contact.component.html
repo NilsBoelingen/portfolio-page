@@ -10,24 +10,55 @@
         </div>
     </section>
     <section class="form-section">
-        <form action="onsubmit" #contactForm>
+        <form #contactForm>
             <div class="input-area">
-                <input type="text" class="input-name" name="name" placeholder="Your name" #name (change)="checkNameEmpty()">
-                <img src="assets/img/contact/error.png" class="name-error" *ngIf="!nameValue">
-                <img src="assets/img/contact/accepted.png" class="name-error" *ngIf="nameValue">
-                <p *ngIf="!nameValue" class="name-error-text">Your name is required</p>
-                <input type="email" name="email" placeholder="Your email" #email (blur)="checkEmailEmpty()">
-                <textarea name="massage" cols="30" rows="10"
-                    placeholder="Your message" #massage (blur)="checkMassageEmpty()"></textarea>
+                <div>
+                    <input type="text" class="input-name" name="name"
+                        placeholder="Your name" #name (input)="checkNameEmpty()"
+                        (focus)="nameClicked = true">
+                    <img src="assets/img/contact/error.png" class="error-img"
+                        *ngIf="!nameValue && nameClicked">
+                    <img src="assets/img/contact/accepted.png"
+                        class="error-img" *ngIf="nameValue && nameClicked">
+                    <p *ngIf="!nameValue && nameClicked"
+                        class="error-text">Your name is required</p>
+                </div>
+                <div>
+                    <input type="email" name="email" placeholder="Your email"
+                        #email (input)="checkEmailEmpty()"
+                        (focus)="emailClicked = true">
+                    <img src="assets/img/contact/error.png" class="error-img"
+                        *ngIf="!emailValue && emailClicked">
+                    <img src="assets/img/contact/accepted.png"
+                        class="error-img" *ngIf="emailValue && emailClicked">
+                    <p *ngIf="!emailValue && emailClicked"
+                        class="error-text">Your email is required</p>
+                </div>
+                <div>
+                    <textarea name="message" cols="30" rows="10"
+                        placeholder="Your message" #message
+                        (input)="checkMessageEmpty()"
+                        (focus)="messageClicked = true"></textarea>
+                    <img src="assets/img/contact/error.png" class="error-img"
+                        *ngIf="!messageValue && messageClicked">
+                    <img src="assets/img/contact/accepted.png"
+                        class="error-img"
+                        *ngIf="messageValue && messageClicked">
+                    <p *ngIf="!messageValue && messageClicked"
+                        class="message-error-text">Your message is empty</p>
+                </div>
             </div>
             <div class="confirm-area">
                 <div>
-                    <input type="checkbox">
+                    <input type="checkbox" name="checkbox" #checkbox
+                        (click)="activateCheckbox(); checkboxClicked = true">
                     <span>I've read the &nbsp;<a> Privacy policy </a>&nbsp; and
                         agree to the
                         processing of my data as outlined.</span>
+                    <p *ngIf="!checkboxActive && checkboxClicked">Please accept
+                        the privacy policy.</p>
                 </div>
-                <button type="submit">Send message :&#041;</button>
+                <button type="submit" [disabled]="!checkboxActive"><span>Send message :&#041;</span></button>
             </div>
         </form>
     </section>

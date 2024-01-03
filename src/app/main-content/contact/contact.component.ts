@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { NgIf, NgStyle } from '@angular/common';
@@ -11,44 +11,63 @@ import { NgIf, NgStyle } from '@angular/common';
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
-img: any;
-url(arg0: number): any {
-throw new Error('Method not implemented.');
-}
+  img: any;
+  url(arg0: number): any {
+    throw new Error('Method not implemented.');
+  }
 
-  @ViewChild('contactForm') contactForm: any;
-  @ViewChild('name') name: any;
-  @ViewChild('email') email: any;
-  @ViewChild('massage') massage: any;
+  @ViewChild('contactForm') contactForm!: ElementRef;
+  @ViewChild('name') name!: ElementRef;
+  @ViewChild('email') email!: ElementRef;
+  @ViewChild('message') message!: ElementRef;
+  @ViewChild('checkbox') checkbox!: ElementRef;
 
   nameValue: boolean = false;
+  nameClicked: boolean = false;
+  emailValue: boolean = false;
+  emailClicked: boolean = false;
+  messageValue: boolean = false;
+  messageClicked: boolean = false;
+  checkboxActive: boolean = false;
+  checkboxClicked: boolean = false;
 
   checkNameEmpty() {
     if (this.name.nativeElement.value) {
       this.nameValue = true;
       this.name.nativeElement.style.border = '1px solid #70E61C';
-      console.log(this.name);
     } else {
       this.nameValue = false;
       this.name.nativeElement.style.border = '1px solid #E61C40';
-      console.log('name ist leer');
     }
   }
 
   checkEmailEmpty() {
     if (this.email.nativeElement.value) {
-      console.log('passt' + this.email.nativeElement.value);
+      this.emailValue = true;
+      this.email.nativeElement.style.border = '1px solid #70E61C';
     } else {
-      console.log('email ist leer');
+      this.emailValue = false;
+      this.email.nativeElement.style.border = '1px solid #E61C40';
     }
   }
 
-  checkMassageEmpty() {
-    if (this.massage.nativeElement.value) {
-      console.log('passt' + this.massage.nativeElement.value);
+  checkMessageEmpty() {
+    if (this.message.nativeElement.value) {
+      this.messageValue = true;
+      this.message.nativeElement.style.border = '1px solid #70E61C';
     } else {
-      console.log('massage ist leer');
+      this.messageValue = false;
+      this.message.nativeElement.style.border = '1px solid #E61C40';
     }
   }
 
+  activateCheckbox() {
+    if (this.checkbox.nativeElement.checked) {
+      this.checkboxActive = true;
+      console.log(this.checkboxActive);
+    } else {
+      this.checkboxActive = false;
+      console.log(this.checkboxActive);
+    }
+  }
 }
