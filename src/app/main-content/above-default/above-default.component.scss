@@ -86,7 +86,7 @@ h3 {
     top: 600px;
     right: 408px;
     text-decoration: none;
-    cursor: url('/assets/img/background/icons8-mauszeiger-pointer.svg'), auto;
+    cursor: url('/assets/img/background/icons8-mauszeiger-pointer.png'), auto;
     transition: transform 300ms ease-out;
 
     span {
@@ -97,7 +97,7 @@ h3 {
         font-weight: 400;
         line-height: 120%;
         transition: transform 300ms ease-out;
-        cursor: url('/assets/img/background/icons8-mauszeiger-pointer.svg'), auto;
+        cursor: url('/assets/img/background/icons8-mauszeiger-pointer.png'), auto;
     }
 
     &:hover {
@@ -155,7 +155,7 @@ h3 {
         font-weight: 400;
         line-height: 120%;
         text-decoration: none;
-        cursor: url('/assets/img/background/icons8-mauszeiger-pointer.svg'), auto;
+        cursor: url('/assets/img/background/icons8-mauszeiger-pointer.png'), auto;
 
         &:hover {
             color: #FA7902;
@@ -163,7 +163,7 @@ h3 {
     }
 
     img {
-        cursor: url('/assets/img/background/icons8-mauszeiger-pointer.svg'), auto;
+        cursor: url('/assets/img/background/icons8-mauszeiger-pointer.png'), auto;
         transition: transform 100ms ease-out;
 
         &:hover {

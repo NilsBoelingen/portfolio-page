@@ -44,7 +44,7 @@ input[type="email"] {
     border-radius: 10px;
     border: 1px solid #FF4747;
     background: #141D2F;
-    cursor: url('/assets/img/background/icons8-mauszeiger-pointer.svg'), auto;
+    cursor: url('/assets/img/background/icons8-mauszeiger-pointer.png'), auto;
     color: #FFFFFF;
     font-family: Poppins;
     font-size: 16px;
@@ -76,13 +76,15 @@ textarea {
     border-radius: 10px;
     border: 1px solid #FF4747;
     background: #141D2F;
-    cursor: url('/assets/img/background/icons8-mauszeiger-pointer.svg'), auto;
+    cursor: url('/assets/img/background/icons8-mauszeiger-pointer.png'), auto;
     color: #FFFFFF;
     font-family: Poppins;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 120%;
+    resize: none;
+    overflow: auto;
 
     &::placeholder {
         color: #FFFFFF;
@@ -174,7 +176,7 @@ textarea {
             border-radius: 4px;
             display: grid;
             place-content: center;
-            cursor: url('/assets/img/background/icons8-mauszeiger-pointer.svg'), auto;
+            cursor: url('/assets/img/background/icons8-mauszeiger-pointer.png'), auto;
 
             &:hover {
                 border: 1px solid #FA7902;
@@ -205,7 +207,7 @@ textarea {
 
             a {
                 color: #FF4747;
-                cursor: url('/assets/img/background/icons8-mauszeiger-pointer.svg'), auto;
+                cursor: url('/assets/img/background/icons8-mauszeiger-pointer.png'), auto;
 
                 &:hover {
                     text-decoration: underline;
@@ -227,7 +229,7 @@ button {
     border-radius: 10px;
     background: #FA7902;
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    cursor: url('/assets/img/background/icons8-mauszeiger-pointer.svg'), auto;
+    cursor: url('/assets/img/background/icons8-mauszeiger-pointer.png'), auto;
     transition: transform 300ms ease-out;
 
     span {
@@ -238,7 +240,7 @@ button {
         font-weight: 400;
         line-height: 120%;
         transition: transform 300ms ease-out;
-        cursor: url('/assets/img/background/icons8-mauszeiger-pointer.svg'), auto;
+        cursor: url('/assets/img/background/icons8-mauszeiger-pointer.png'), auto;
     }
 
     &:hover:enabled {
@@ -299,7 +301,7 @@ button {
     position: absolute;
     right: 100px;
     bottom: 90px;
-    cursor: url('/assets/img/background/icons8-mauszeiger-pointer.svg'), auto;
+    cursor: url('/assets/img/background/icons8-mauszeiger-pointer.png'), auto;
 
     &:hover {
         border: 2px solid #FA7902;
