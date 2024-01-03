@@ -12,10 +12,10 @@
     <section class="form-section">
         <form action="onsubmit" #contactForm>
             <div class="input-area">
-                <input type="text" class="input-name" name="name" placeholder="Your name" #name (blur)="checkNameEmpty()">
-                <img src="assets/img/contact/error.png" *ngIf="!nameValue">
-                <img src="assets/img/contact/accepted.png" *ngIf="nameValue">
-                <p *ngIf="!nameValue">Your name is required</p>
+                <input type="text" class="input-name" name="name" placeholder="Your name" #name (change)="checkNameEmpty()">
+                <img src="assets/img/contact/error.png" class="name-error" *ngIf="!nameValue">
+                <img src="assets/img/contact/accepted.png" class="name-error" *ngIf="nameValue">
+                <p *ngIf="!nameValue" class="name-error-text">Your name is required</p>
                 <input type="email" name="email" placeholder="Your email" #email (blur)="checkEmailEmpty()">
                 <textarea name="massage" cols="30" rows="10"
                     placeholder="Your message" #massage (blur)="checkMassageEmpty()"></textarea>

@@ -26,9 +26,11 @@ throw new Error('Method not implemented.');
   checkNameEmpty() {
     if (this.name.nativeElement.value) {
       this.nameValue = true;
-      console.log('passt' + this.name.nativeElement.value);
+      this.name.nativeElement.style.border = '1px solid #70E61C';
+      console.log(this.name);
     } else {
       this.nameValue = false;
+      this.name.nativeElement.style.border = '1px solid #E61C40';
       console.log('name ist leer');
     }
   }
