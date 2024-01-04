@@ -1,4 +1,13 @@
 <main>
+    <section class="dialog" *ngIf="dialogOpen">
+        <div>
+            <div>
+                <h1 *ngIf="sendingMail">Your message is being sent!</h1>
+                <h1 *ngIf="mailSend">Your message has been sent!</h1>
+                <h2 *ngIf="mailSend">I will answer you as soon as possible.</h2>
+            </div>
+        </div>
+    </section>
     <section class="main-section">
         <h1>Contact</h1>
         <h2>Got a problem to solve?</h2>
@@ -10,10 +19,10 @@
         </div>
     </section>
     <section class="form-section">
-        <form #contactForm>
+        <form (submit)="sendMail()" #contactForm>
             <div class="input-area">
                 <div>
-                    <input type="text" class="input-name" name="name"
+                    <input type="text" class="border" name="name"
                         placeholder="Your name" #name (input)="checkNameEmpty()"
                         (focus)="nameClicked = true">
                     <img src="assets/img/contact/error.png" class="error-img"
@@ -24,7 +33,7 @@
                         class="error-text">Your name is required</p>
                 </div>
                 <div>
-                    <input type="email" name="email" placeholder="Your email"
+                    <input type="email" class="border" name="email" placeholder="Your email"
                         #email (input)="checkEmailEmpty()"
                         (focus)="emailClicked = true">
                     <img src="assets/img/contact/error.png" class="error-img"
@@ -35,7 +44,7 @@
                         class="error-text">Your email is required</p>
                 </div>
                 <div>
-                    <textarea name="message" cols="30" rows="10"
+                    <textarea name="message" class="border" cols="30" rows="10"
                         placeholder="Your message" #message
                         (input)="checkMessageEmpty()"
                         (focus)="messageClicked = true"></textarea>
@@ -50,7 +59,7 @@
             </div>
             <div class="confirm-area">
                 <div>
-                    <input type="checkbox" name="checkbox" #checkbox
+                    <input type="checkbox" class="border" name="checkbox" #checkbox
                         (click)="activateCheckbox(); checkboxClicked = true">
                     <span>I've read the &nbsp;<a> Privacy policy </a>&nbsp; and
                         agree to the
@@ -58,7 +67,9 @@
                     <p *ngIf="!checkboxActive && checkboxClicked">Please accept
                         the privacy policy.</p>
                 </div>
-                <button type="submit" [disabled]="!checkboxActive"><span>Send message :&#041;</span></button>
+                <button type="submit"
+                    [disabled]="!(checkboxActive && nameValue && emailValue && messageValue)"
+                    #button><span>Send message :&#041;</span></button>
             </div>
         </form>
     </section>

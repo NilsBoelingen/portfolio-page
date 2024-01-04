@@ -42,7 +42,6 @@ input[type="email"] {
     align-items: center;
     gap: 10px;
     border-radius: 10px;
-    border: 1px solid #FF4747;
     background: #141D2F;
     cursor: url('/assets/img/background/icons8-mauszeiger-pointer.png'), auto;
     color: #FFFFFF;
@@ -52,12 +51,12 @@ input[type="email"] {
     font-weight: 400;
     line-height: 120%;
 
-    &::placeholder {
-        color: #FFFFFF;
+    &:disabled {
+        background-color: #304979;
     }
 
-    &:hover {
-        border: 1px solid #FA7902;
+    &::placeholder {
+        color: #FFFFFF;
     }
 
     &:focus {
@@ -74,7 +73,6 @@ textarea {
     align-items: flex-start;
     gap: 10px;
     border-radius: 10px;
-    border: 1px solid #FF4747;
     background: #141D2F;
     cursor: url('/assets/img/background/icons8-mauszeiger-pointer.png'), auto;
     color: #FFFFFF;
@@ -86,16 +84,24 @@ textarea {
     resize: none;
     overflow: auto;
 
+    &:disabled {
+        background-color: #304979;
+    }
+
     &::placeholder {
         color: #FFFFFF;
     }
 
-    &:hover {
-        border: 1px solid #FA7902;
-    }
-
     &:focus {
         outline: none;
+        border: 1px solid #FA7902;
+    }
+}
+
+.border {
+    border: 1px solid #FF4747;
+
+    &:hover {
         border: 1px solid #FA7902;
     }
 }
@@ -172,14 +178,13 @@ textarea {
             margin: 0;
             width: 20px;
             height: 20px;
-            border: 1px solid #FF4747;
             border-radius: 4px;
             display: grid;
             place-content: center;
             cursor: url('/assets/img/background/icons8-mauszeiger-pointer.png'), auto;
 
-            &:hover {
-                border: 1px solid #FA7902;
+            &:disabled {
+                background-color: #304979;
             }
 
             &::before {
@@ -311,6 +316,46 @@ button {
                 path {
                     fill: #FA7902;
                 }
+            }
+        }
+    }
+}
+
+.dialog {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        background-color: #141D2F;
+        border-radius: 44px;
+        padding: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #E61C40;
+
+        div {
+            text-align: center;
+            border-radius: 40px;
+            padding: 50px 80px;
+            border: 1px solid #FA7902;
+            display: flex;
+            flex-direction: column;
+
+            h1 {
+                font-size: 48px;
+            }
+    
+            h2 {
+                margin-top: 16px;
             }
         }
     }
