@@ -45,7 +45,7 @@ export class ContactComponent {
     } else {
       this.nameValue = false;
       this.name.nativeElement.classList.remove('border');
-      this.name.nativeElement.style.border = '1px solid #E61C40';      
+      this.name.nativeElement.style.border = '1px solid #E61C40';
     }
   }
 
@@ -77,11 +77,11 @@ export class ContactComponent {
     if (this.checkbox.nativeElement.checked) {
       this.checkboxActive = true;
     } else if (!this.checkbox.nativeElement.checked && this.checkboxClicked) {
-      this.checkboxActive = false; 
+      this.checkboxActive = false;
       this.checkbox.nativeElement.classList.remove('border');
       this.checkbox.nativeElement.style.border = '1px solid #E61C40';
     } else {
-      this.checkboxActive = false;      
+      this.checkboxActive = false;
     }
   }
 

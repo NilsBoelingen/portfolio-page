@@ -1,12 +1,16 @@
+import { NgIf } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [],
+  imports: [NgIf],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
 
+  mouseOverMe: boolean = false;
+  mouseOverSkills: boolean = false;
+  mouseOverPortfolio: boolean = false;
 }

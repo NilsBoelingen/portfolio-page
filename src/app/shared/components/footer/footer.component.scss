@@ -13,20 +13,25 @@ main {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    position: relative;
 
     img {
         height: 40px;
         cursor: url('/assets/img/background/icons8-mauszeiger-pointer.png'), auto;
     }
 
-    a {
-        text-decoration: none;
-        color: #FFFFFF;
-        font-family: Poppins;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 120%;
+    div {
+        position: relative;
+
+        a {
+            text-decoration: none;
+            color: #FFFFFF;
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 120%;
+        }
     }
 }
 
@@ -53,4 +58,13 @@ main {
             transform: scale(1.33);
         }
     }
+}
+
+.underline {
+    width: 55.5px;
+    height: 0;
+    border: 1px solid #FF4747;
+    position: absolute !important;
+    top: 24px;
+    left: 0;
 }

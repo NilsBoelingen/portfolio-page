@@ -4,6 +4,11 @@ main {
     background-color: #141D2F;
     display: flex;
     justify-content: space-between;
+
+    section {
+        position: relative;
+        z-index: 2;
+    }
 }
 
 h1 {
@@ -212,6 +217,7 @@ textarea {
 
             a {
                 color: #FF4747;
+                text-decoration: none;
                 cursor: url('/assets/img/background/icons8-mauszeiger-pointer.png'), auto;
 
                 &:hover {

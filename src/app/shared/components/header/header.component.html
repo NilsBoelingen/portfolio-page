@@ -1,8 +1,18 @@
 <main>
-    <a href="#aboveDefault"><img src="assets/img/header/logo_200x200_clean.png"></a>
+    <a href="#aboveDefault"><img
+            src="assets/img/header/logo_200x200_clean.png"></a>
     <div>
-        <a href="#aboutMe">About Me</a>
-        <a href="#skills">Skills</a>
-        <a href="#portfolio">Portfolio</a>
+        <div>
+            <a href="#aboutMe" (mouseenter)="mouseOverMe = true" (mouseleave)="mouseOverMe = false">About Me</a>
+            <div class="underline" *ngIf="mouseOverMe"></div>
+        </div>
+        <div>
+            <a href="#skills" (mouseenter)="mouseOverSkills = true" (mouseleave)="mouseOverSkills = false">Skills</a>
+            <div class="underline" *ngIf="mouseOverSkills"></div>
+        </div>
+        <div>
+            <a href="#portfolio" (mouseenter)="mouseOverPortfolio = true" (mouseleave)="mouseOverPortfolio = false">Portfolio</a>
+            <div class="underline" *ngIf="mouseOverPortfolio"></div>
+        </div>
     </div>
 </main>
