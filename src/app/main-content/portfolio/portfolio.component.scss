@@ -2,6 +2,17 @@ main {
     position: relative;
     padding: 177px 0 93px 0;
     background-color: #141D2F;
+    position: relative;
+}
+
+section {
+    position: relative;
+    z-index: 2;
+}
+
+app-portfolio-item {
+    position: relative;
+    z-index: 2;
 }
 
 h1 {
@@ -69,4 +80,19 @@ app-portfolio-item {
         flex-direction: row;
         text-align: end;
     }
+}
+
+.shadow-1 {
+    position: absolute;
+    top: 1137px;
+    left: -40px;
+    z-index: 1;
+}
+
+.shadow-2 {
+    position: absolute;
+    bottom: -170px;
+    right: -511px;
+    transform: rotateZ(90deg);
+    z-index: 1;
 }

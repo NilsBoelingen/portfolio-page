@@ -126,3 +126,16 @@ button {
     right: 0;
     top: 240px;
 }
+
+section {
+    position: relative;
+    z-index: 2;
+}
+
+.shadow {
+    position: absolute;
+    top: 184px;
+    left: -554px;
+    z-index: 1;
+    transform: rotateX(180deg);
+}
