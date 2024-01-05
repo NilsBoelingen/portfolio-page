@@ -1,18 +1,21 @@
 <main>
-    <a href="#aboveDefault"><img
-            src="assets/img/header/logo_200x200_clean.png"></a>
-    <div>
+    <a href="#top"><img src="assets/img/header/logo_200x200_clean.png" (click)="resetSelected()"></a>
+    <div class="link-container">
         <div>
-            <a href="#aboutMe" (mouseenter)="mouseOverMe = true" (mouseleave)="mouseOverMe = false">About Me</a>
-            <div class="underline" *ngIf="mouseOverMe"></div>
+            <a href="#aboutMe" (mouseenter)="aboutMe = true" (mouseleave)="aboutMe = false"
+               (click)="selectItem('aboutMe')" [class.selected]="selectedItem === 'aboutMe'">About Me</a>
+            <div class="underline" [class.selected-line]="selectedItem === 'aboutMe'" [class.hover]="aboutMe === true"></div>
         </div>
         <div>
-            <a href="#skills" (mouseenter)="mouseOverSkills = true" (mouseleave)="mouseOverSkills = false">Skills</a>
-            <div class="underline" *ngIf="mouseOverSkills"></div>
+            <a href="#skills" (mouseenter)="skills = true" (mouseleave)="skills = false"
+               (click)="selectItem('skills')" [class.selected]="selectedItem === 'skills'">Skills</a>
+            <div class="underline" [class.selected-line]="selectedItem === 'skills'" [class.hover]="skills === true"></div>
         </div>
         <div>
-            <a href="#portfolio" (mouseenter)="mouseOverPortfolio = true" (mouseleave)="mouseOverPortfolio = false">Portfolio</a>
-            <div class="underline" *ngIf="mouseOverPortfolio"></div>
+            <a href="#portfolio" (mouseenter)="portfolio = true" (mouseleave)="portfolio = false"
+               (click)="selectItem('portfolio')" [class.selected]="selectedItem === 'portfolio'">Portfolio</a>
+            <div class="underline" [class.selected-line]="selectedItem === 'portfolio'" [class.hover]="portfolio === true"></div>
         </div>
     </div>
 </main>
+
