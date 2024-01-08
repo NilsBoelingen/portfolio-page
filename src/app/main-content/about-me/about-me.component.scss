@@ -96,3 +96,22 @@ li {
         transform: scale(1.2);
     }
 }
+
+@media (max-width: 450px) {
+    main {
+        padding: 148px 24px 0 24px;
+        width: unset;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    .about {
+        width: unset;
+    }
+
+    .about-me-img {
+        display: none;
+    }
+}

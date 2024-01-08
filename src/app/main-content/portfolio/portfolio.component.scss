@@ -96,3 +96,9 @@ app-portfolio-item {
     transform: rotateZ(90deg);
     z-index: 1;
 }
+
+@media (max-width: 450px) {
+    main {
+        padding: 109px 24px 93px 24px;
+    }
+}

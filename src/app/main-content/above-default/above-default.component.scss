@@ -8,30 +8,48 @@ main {
         align-items: center;
         justify-content: space-between;
         padding: 0 100px;
-
-        img {
-            height: 705px;
-        }
     }
+}
+
+h4 {
+    color: #ff0000;
+    text-align: right;
+    font-family: Poppins;
+    font-size: 108px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.uc {
+    width: 100%;
+    position: absolute;
+    transform: rotateZ(-25deg);
+    top: 302px;
+    display: flex;
+    justify-content: center;
+    z-index: 98;
 }
 
 .top-bg-grafik {
     position: absolute;
-    top: 376px;
+    top: 460px;
     left: -10px;
-    width: 102%;
+    width: 104%;
     height: 1079px;
     z-index: 1;
 }
 
 .personal-img {
     z-index: 2;
+    margin-top: 88px;
+    height: 705px;
 }
 
 .img-background {
     position: absolute;
-    left: -48px;
-    top: 138px;
+    left: -64px;
+    top: 160px;
 }
 
 .welcome-txt {
@@ -123,7 +141,7 @@ h3 {
     display: flex;
     transform: rotate(90deg);
     gap: 8px;
-    
+
     span {
         color: #FFFFFF;
         font-family: Poppins;
@@ -177,4 +195,60 @@ h3 {
     height: 0px;
     flex-shrink: 0;
     border: 2px solid #FF4747;
+}
+
+@media (max-width: 450px) {
+    main {
+
+        section {
+            flex-direction: column;
+            padding: 0 24px;
+        }
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 42px;
+    }
+
+    h3 {
+        font-size: 29px;
+    }
+
+    .personal-img {
+        height: 448px;
+    }
+
+    .img-background {
+        width: 480px;
+        left: -25px;
+        top: 210px;
+    }
+
+    .top-bg-grafik {
+        top: 210px;
+        width: 917px;
+        height: 1079px;
+    }
+
+    .button {
+        right: unset;
+        top: unset;
+        bottom: 128px;
+
+        span {
+            font-size: 16px;
+        }
+    }
+
+    .mail {
+        display: none;
+    }
+
+    .scroll-down {
+        display: none;
+    }
 }
