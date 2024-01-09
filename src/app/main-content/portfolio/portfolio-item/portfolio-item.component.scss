@@ -88,4 +88,8 @@ section {
     .reverse {
         align-items: center;
     }
+
+    img {
+        max-width: -webkit-fill-available;
+    }
 }

@@ -96,11 +96,11 @@ app-portfolio-item {
 
 @media (max-width: 850px) {
     main {
-        padding: 109px 24px 93px 24px;
+        padding: 109px 0 93px 0;
     }
 
     app-portfolio-item {
-        padding: 75px 0;
+        padding: 75px 24px;
 
         &:nth-child(even) {
             flex-direction: column-reverse;

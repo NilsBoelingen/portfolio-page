@@ -4,12 +4,14 @@ main {
   justify-content: space-between;
   align-items: center;
   background-color: #141D2F;
+}
+
+.logo {
+  animation: rotate360 10s linear infinite;
 
   img {
     height: 30px;
     cursor: url('/assets/img/background/icons8-mauszeiger-pointer.png'), auto;
-
-    animation: rotate360 10s linear infinite;
   }
 }
 
@@ -46,22 +48,22 @@ main {
 }
 
 .underline {
-    width: 55.5px;
-    height: 0;
-    position: absolute !important;
-    top: 30px;
-    left: 0;
-    border: 1.5px solid #FF4747;
-    z-index: 1000;
-    display: none;
+  width: 55.5px;
+  height: 0;
+  position: absolute !important;
+  top: 30px;
+  left: 0;
+  border: 1.5px solid #FF4747;
+  z-index: 1000;
+  display: none;
 
-    &.selected-line {
-      display: block;
-    }
+  &.selected-line {
+    display: block;
+  }
 
-    &.hover {
-      display: block;
-    }
+  &.hover {
+    display: block;
+  }
 }
 
 @keyframes rotate360 {
@@ -75,5 +77,70 @@ main {
 
   100% {
     transform: rotateY(360deg);
+  }
+}
+
+.menu-button {
+  display: none;
+  z-index: 99;
+}
+
+.dialog-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #141D2FCC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.08s ease-out;
+
+  img {
+    position: absolute;
+    top: 37px;
+    left: 24px;
+    height: 30px;
+    animation: rotate360 10s linear infinite;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+
+    a {
+      color: #FFFFFF;
+      font-family: Poppins;
+      font-size: 23px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%;
+      text-decoration: none;
+    }
+  }
+}
+
+.show-menu {
+  transform: translateX(0);
+}
+
+.hide-menu {
+  transform: translateX(100%);
+}
+
+@media (max-width: 850px) {
+  main {
+    padding: 37px 24px;
+  }
+
+  .link-container {
+    display: none;
+  }
+
+  .menu-button {
+    display: block;
+    height: 30px;
   }
 }
