@@ -3,8 +3,11 @@
     <h2>{{ projects[index].Languages }}</h2>
     <span>{{ projects[index].describtion }}</span>
     <div>
-        <a href="{{ projects[index].test }}" target="_blank" rel="noreferrer noopener"><button class="live-test">Live test</button></a>
-        <a href="{{ projects[index].github }}" target="_blank" rel="noreferrer noopener"><button class="github">Github</button></a>
+        <a href="{{ projects[index].test }}" target="_blank"
+            rel="noreferrer noopener"><button class="live-test">Live
+                test</button></a>
+        <a href="{{ projects[index].github }}" target="_blank"
+            rel="noreferrer noopener"><button class="github">Github</button></a>
     </div>
 </section>
 <img src="{{ projects[index].image }}" id="img{{ index }}">

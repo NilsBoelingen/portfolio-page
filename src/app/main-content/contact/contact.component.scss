@@ -301,6 +301,7 @@ button {
 }
 
 .arrow-up {
+    z-index: 2;
     display: flex;
     width: 39px;
     height: 39px;
@@ -359,7 +360,7 @@ button {
             h1 {
                 font-size: 48px;
             }
-    
+
             h2 {
                 margin-top: 16px;
             }
@@ -367,8 +368,57 @@ button {
     }
 }
 
-.shadow {
+.bg-img {
     position: absolute;
     bottom: -280px;
     left: 0;
+    width: 678px;
+    height: 805px;
+    overflow: hidden;
+}
+
+@media (max-width: 850px) {
+    main {
+        padding: 0 24px 180px 24px;
+        flex-direction: column;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        width: -webkit-fill-available;
+    }
+    
+    textarea {
+        width: -webkit-fill-available;
+    }
+
+    .line {
+        width: 20px;
+    }
+
+    .form-section {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            div {
+                width: 100%;
+            }
+        }
+    }
+
+    .bg-img {
+        height: 640px;
+    }
+
+    .arrow-up {
+        right: 24px;
+        bottom: 48px;
+    }
 }

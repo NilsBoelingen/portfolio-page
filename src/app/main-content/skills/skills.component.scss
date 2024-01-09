@@ -142,14 +142,10 @@ section {
     transform: rotateX(180deg);
 }
 
-@media (max-width: 450px) {
+@media (max-width: 850px) {
     main {
         padding: 148px 24px 0 24px;
         flex-direction: column-reverse;
-    }
-
-    h1 {
-        font-size: 45px;
     }
 
     .icon-container {
@@ -157,21 +153,16 @@ section {
         width: unset;
         justify-content: space-between;
         padding-bottom: 116px;
-
-        div {
-            img {
-                height: 45px;
-            }
-        }
     }
 
     .skill-text {
         width: unset;
+        margin-top: 0;
     }
 
     .line {
         width: 20px;
-        top: 213px;
+        top: 200px;
     }
 
     .button {

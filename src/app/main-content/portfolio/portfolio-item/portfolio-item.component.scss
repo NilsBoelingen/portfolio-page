@@ -79,3 +79,13 @@ section {
 .reverse {
     align-items: end;
 }
+
+@media (max-width: 850px) {
+    section {
+        align-items: center;
+    }
+
+    .reverse {
+        align-items: center;
+    }
+}

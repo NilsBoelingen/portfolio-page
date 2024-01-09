@@ -29,6 +29,7 @@ h4 {
     display: flex;
     justify-content: center;
     z-index: 98;
+    display: none;
 }
 
 .top-bg-grafik {
@@ -59,7 +60,6 @@ h4 {
 }
 
 h1 {
-    transform: rotate(-90deg);
     color: var(--White, #FFFFFF);
     font-family: Poppins;
     font-size: 64px;
@@ -87,6 +87,10 @@ h3 {
     font-weight: 400;
     line-height: 120%;
     margin: 0;
+}
+
+.rotate {
+    transform: rotate(-90deg);
 }
 
 .button {
@@ -197,7 +201,7 @@ h3 {
     border: 2px solid #FF4747;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 850px) {
     main {
 
         section {
@@ -207,37 +211,42 @@ h3 {
     }
 
     h1 {
-        font-size: 32px;
+        font-size: 48px;
     }
 
     h2 {
-        font-size: 42px;
+        font-size: 72px;
     }
 
     h3 {
-        font-size: 29px;
+        font-size: 48px;
+    }
+
+    .welcome-txt {
+        margin-top: 32px;
     }
 
     .personal-img {
-        height: 448px;
+        height: 705px;
+        margin-top: -162px;
     }
 
     .img-background {
-        width: 480px;
-        left: -25px;
-        top: 210px;
+        width: 705px;
+        left: unset;
+        top: 48px;
     }
 
     .top-bg-grafik {
         top: 210px;
-        width: 917px;
+        width: 1400px;
         height: 1079px;
     }
 
     .button {
         right: unset;
         top: unset;
-        bottom: 128px;
+        bottom: 180px;
 
         span {
             font-size: 16px;

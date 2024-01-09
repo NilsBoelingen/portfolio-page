@@ -97,16 +97,11 @@ li {
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 850px) {
     main {
         padding: 148px 24px 0 24px;
         width: unset;
     }
-
-    h1 {
-        font-size: 45px;
-    }
-
     .about {
         width: unset;
     }
