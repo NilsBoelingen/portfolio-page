@@ -331,11 +331,11 @@ button {
 .dialog {
     width: 100vw;
     height: 100vh;
-    position: fixed;
+    position: fixed !important;
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.3);
-    z-index: 100;
+    z-index: 100 !important;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -420,5 +420,21 @@ button {
     .arrow-up {
         right: 24px;
         bottom: 48px;
+    }
+
+    .dialog {
+        div {
+            div{
+                padding: 20px 25px;
+
+                h1 {
+                    font-size: 40px;
+                }
+
+                h2 {
+                    font-size: 28px;
+                }
+            }
+        }
     }
 }

@@ -42,7 +42,7 @@ h4 {
 }
 
 .personal-img {
-    z-index: 2;
+    z-index: 1;
     margin-top: 88px;
     height: 705px;
 }
@@ -201,6 +201,152 @@ h3 {
     border: 2px solid #FF4747;
 }
 
+@media (max-width: 1393px) {
+    h1 {
+        font-size: 56px;
+    }
+
+    h2 {
+        font-size: 80px;
+    }
+
+    h3 {
+        font-size: 52px;
+    }
+
+    .button {
+        right: 362px;
+    }
+}
+
+@media (max-width: 1302px) {
+    h1 {
+        font-size: 48px;
+    }
+
+    h2 {
+        font-size: 72px;
+    }
+
+    h3 {
+        font-size: 48px;
+    }
+
+    .button {
+        right: 330px;
+    }
+}
+
+@media (max-width: 1228px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 64px;
+    }
+
+    h3 {
+        font-size: 40px;
+    }
+
+    .personal-img {
+        height: 640px;
+    }
+
+    .img-background {
+        width: 640px;
+        top: 240px;
+    }
+
+    .top-bg-grafik {
+        top: 398px;
+    }
+
+    .button {
+        right: 318px;
+        top: 550px;
+    }
+}
+
+@media (max-width: 1150px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 56px;
+    }
+
+    h3 {
+        font-size: 32px;
+    }
+
+    .button {
+        right: 304px;
+
+        span {
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 1075px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 48px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    .personal-img {
+        height: 560px;
+    }
+
+    .img-background {
+        width: 560px;
+        top: 280px;
+        left: -48px;
+    }
+
+    .top-bg-grafik {
+        top: 320px;
+        width: 1400px;
+        height: 1079px;
+    }
+
+    .button {
+        right: 296px;
+        top: 500px;
+
+        span {
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 918px) {
+    main {
+        section {
+            padding: 0 50px;
+        }
+    }
+
+    .button {
+        right: 248px;
+    }
+
+    .scroll-down {
+        position: absolute;
+        right: -20px;
+    }
+}
+
 @media (max-width: 850px) {
     main {
 
@@ -245,8 +391,7 @@ h3 {
 
     .button {
         right: unset;
-        top: unset;
-        bottom: 180px;
+        top: 846px;
 
         span {
             font-size: 16px;
@@ -259,5 +404,134 @@ h3 {
 
     .scroll-down {
         display: none;
+    }
+
+    .line {
+        width: 80px;
+    }
+}
+
+@media (max-width: 710px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 56px;
+    }
+
+    h3 {
+        font-size: 40px;
+    }
+
+    .line {
+        width: 60px;
+    }
+}
+
+@media (max-width: 570px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 48px;
+    }
+
+    h3 {
+        font-size: 32px;
+    }
+
+    .personal-img {
+        height: 600px;
+        margin-top: -60px;
+    }
+
+    .img-background {
+        width: 600px;
+        top: 112px;
+    }
+
+    .button {
+        top: 800px;
+    }
+
+    .line {
+        width: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    .top-bg-grafik {
+        top: 150px;
+    }
+
+    .personal-img {
+        height: 480px;
+        margin-top: 0px;
+    }
+
+    .button {
+        top: 712px;
+    }
+
+    .line {
+        width: 20px;
+    }
+
+    .social {
+        gap: 24px;
+        a {
+            img {
+                width: 24px;
+            }
+        }
+    }
+}
+
+@media (max-width: 370px) {
+    h1 {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    .personal-img {
+        height: 400px;
+    }
+
+    .img-background {
+        width: 400px;
+        top: 170px;
+    }
+
+    .top-bg-grafik {
+        top: 72px;
+    }
+
+    .button {
+        top: 600px;
+    }
+
+    .social {
+        gap: 16px;
     }
 }
