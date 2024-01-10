@@ -138,7 +138,7 @@ h3 {
     align-items: center;
     justify-content: space-between;
     z-index: 2;
-    padding-right: 45px;
+    padding-right: 30px;
 }
 
 .scroll-down {
@@ -199,6 +199,18 @@ h3 {
     height: 0px;
     flex-shrink: 0;
     border: 2px solid #FF4747;
+}
+
+@media (min-width: 1920px) {
+    main {
+        section {
+            padding: 0 150px;
+        }
+    }
+
+    .bottom-container {
+        padding-right: 80px;
+    }
 }
 
 @media (max-width: 1393px) {

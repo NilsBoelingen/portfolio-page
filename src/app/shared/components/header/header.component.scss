@@ -130,6 +130,18 @@ main {
   transform: translateX(100%);
 }
 
+@media (min-width: 1920px) {
+  main {
+    padding: 37px 150px;
+  }
+}
+
+@media (max-width:918px) {
+  main {
+    padding: 37px 50px;
+  }
+}
+
 @media (max-width: 850px) {
   main {
     padding: 37px 24px;

@@ -2,7 +2,6 @@ main {
     position: relative;
     padding: 148px 100px 0 100px;
     background-color: #141D2F;
-    width: 100%;
 }
 
 h1 {
@@ -59,8 +58,8 @@ li {
     height: 400px;
     overflow: hidden;
     position: absolute;
-    bottom: 32px;
-    right: 470px;
+    bottom: 160px;
+    right: 267px;
     z-index: 2;
     border-radius: 50%;
     border: 4px solid #FA7902;
@@ -77,8 +76,8 @@ li {
     height: 0px;
     border: 2px solid #FA7902;
     position: absolute;
-    right: 200px;
-    bottom: 236px;
+    right: 0;
+    bottom: 364px;
     z-index: 2;
 }
 
@@ -97,11 +96,106 @@ li {
     }
 }
 
+@media (min-width: 1920px) {
+    main {
+        padding: 148px 150px 0 150px;
+    }
+
+    .about {
+        width: 700px;
+    }
+
+    .round-image {
+        bottom: 20px;
+        right: 360px;
+    }
+
+    .line {
+        width: 360px;
+        bottom: 224px;
+    }
+}
+
+@media (max-width: 1393px) {
+    h1 {
+        font-size: 80px;
+    }
+}
+
+@media (max-width: 1302px) {
+    h1 {
+        font-size: 72px;
+    }
+
+    .line {
+        width: 200px;
+    }
+
+    .round-image {
+        right: 200px;
+    }
+}
+
+@media (max-width: 1228px) {
+    h1 {
+        font-size: 64px;
+    }
+
+    .about {
+        width: 400px;
+    }
+}
+
+@media (max-width: 1150px) {
+    h1 {
+        font-size: 56px;
+    }
+
+    .round-image {
+        width: 350px;
+        height: 350px;
+        bottom: 185px;
+    }
+}
+
+@media (max-width: 1075px) {
+    h1 {
+        font-size: 48px;
+    }
+
+    .line {
+        width: 80px;
+    }
+
+    .round-image {
+        right: 80px;
+    }
+}
+
+@media (max-width: 918px) {
+    main {
+        padding: 148px 50px 0 50px;
+    }
+
+    .line {
+        width: 50px;
+    }
+
+    .round-image {
+        right: 50px;
+    }
+}
+
 @media (max-width: 850px) {
     main {
         padding: 148px 24px 0 24px;
         width: unset;
     }
+
+    h1 {
+        font-size: 72px;
+    }
+
     .about {
         width: unset;
     }

@@ -142,6 +142,108 @@ section {
     transform: rotateX(180deg);
 }
 
+@media (min-width: 1920px) {
+    main {
+        padding: 148px 150px 0 150px;
+    }
+
+    .line {
+        width: 87px;
+    }
+
+    .icon-container {
+        gap: 160px;
+        width: 832px;
+    }
+}
+
+@media (max-width: 1393px) {
+    h1 {
+        font-size: 80px;
+    }
+
+    .icon-container {
+        gap: 100px;
+        width: 652px;
+    }
+
+    .line {
+        top: 232px;
+    }
+}
+
+@media (max-width: 1302px) {
+    h1 {
+        font-size: 72px;
+    }
+
+    .icon-container {
+        gap: 80px;
+        width: 592px;
+    }
+
+    .line {
+        top: 226px;
+    }
+}
+
+@media (max-width: 1228px) {
+    h1 {
+        font-size: 64px;
+    }
+
+    .button {
+        right: 160px;
+    }
+
+    .line {
+        top: 222px;
+    }
+}
+
+@media (max-width: 1150px) {
+    h1 {
+        font-size: 56px;
+    }
+
+    .button {
+        right: 120px;
+    }
+
+    .icon-container {
+        gap: 60px;
+        width: 532px;
+    }
+
+    .line {
+        top: 216px;
+    }
+}
+
+@media (max-width: 1075px) {
+    h1 {
+        font-size: 48px;
+    }
+
+    .button {
+        right: 100px;
+    }
+
+    .icon-container {
+        width: 394px;
+    }
+}
+
+@media (max-width: 918px) {
+    main {
+        padding: 148px 50px 0 50px;
+    }
+
+    .line {
+        width: 28px;
+    }
+}
+
 @media (max-width: 850px) {
     main {
         padding: 148px 24px 0 24px;

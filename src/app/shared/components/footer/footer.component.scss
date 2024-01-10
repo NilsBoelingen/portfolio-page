@@ -1,6 +1,6 @@
 main {
     position: relative;
-    padding: 0 100px 0 100px;
+    padding: 0 100px;
     background-color: #141D2F;
     height: 287px;
     display: flex;
@@ -67,6 +67,18 @@ main {
     position: absolute !important;
     top: 24px;
     left: 0;
+}
+
+@media (min-width: 1920px) {
+    main {
+        padding: 0 150px;
+    }
+}
+
+@media (max-width: 918px) {
+    main {
+        padding: 0 50px;
+    }
 }
 
 @media (max-width: 850px) {

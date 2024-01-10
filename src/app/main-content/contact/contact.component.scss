@@ -4,6 +4,7 @@ main {
     background-color: #141D2F;
     display: flex;
     justify-content: space-between;
+    gap: 8px;
 
     section {
         position: relative;
@@ -181,8 +182,8 @@ textarea {
             appearance: none;
             background-color: #141D2F;
             margin: 0;
-            width: 20px;
-            height: 20px;
+            width: 20px !important;
+            height: 20px !important;
             border-radius: 4px;
             display: grid;
             place-content: center;
@@ -214,6 +215,7 @@ textarea {
 
         span {
             display: flex;
+            flex-wrap: wrap;
 
             a {
                 color: #FF4747;
@@ -377,6 +379,136 @@ button {
     overflow: hidden;
 }
 
+@media (min-width: 1920px) {
+    main {
+        padding: 0 150px 180px 150px;
+    }
+
+    .line {
+        width: 75px;
+    }
+
+    .main-section {
+        width: 600px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 800px;
+    }
+
+    .arrow-up {
+        right: 150px;
+    }
+}
+
+@media (max-width: 1393px) {
+    h1 {
+        font-size: 80px;
+    }
+
+    .line {
+        top: 49px;
+    }
+
+    .form-section {
+        padding-top: 188px;
+    }
+}
+
+@media (max-width: 1302px) {
+    h1 {
+        font-size: 72px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .main-section {
+        width: 300px;
+    }
+
+    .line {
+        top: 43px;
+    }
+
+    .form-section {
+        padding-top: 172px;
+    }
+}
+
+@media (max-width: 1228px) {
+    h1 {
+        font-size: 64px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 500px;
+    }
+
+    .form-section {
+        width: 578px;
+        padding-top: 164px;
+    }
+
+    .line {
+        top: 36px;
+    }
+}
+
+@media (max-width: 1150px) {
+    h1 {
+        font-size: 56px;
+    }
+
+    .line {
+        top: 32px;
+    }
+
+    .form-section {
+        padding-top: 156px;
+    }
+}
+
+@media (max-width: 1075px) {
+    h1 {
+        font-size: 48px;
+    }
+
+    span {
+        width: 100%;
+    }
+
+    .form-section {
+        width: 500px;
+        padding-top: 146px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 423px;
+    }
+
+    .line {
+        top: 28px;
+    }
+}
+
+@media (max-width: 918px) {
+    main {
+        padding: 0 50px 180px 50px;
+    }
+
+    .line {
+        width: 25px;
+    }
+}
+
 @media (max-width: 850px) {
     main {
         padding: 0 24px 180px 24px;
@@ -387,7 +519,7 @@ button {
     input[type="email"] {
         width: -webkit-fill-available;
     }
-    
+
     textarea {
         width: -webkit-fill-available;
     }
@@ -424,7 +556,7 @@ button {
 
     .dialog {
         div {
-            div{
+            div {
                 padding: 20px 25px;
 
                 h1 {
