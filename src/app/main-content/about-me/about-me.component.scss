@@ -204,3 +204,15 @@ li {
         display: none;
     }
 }
+
+@media (max-width: 422px) {
+    h1 {
+        font-size: 56px;
+    }
+}
+
+@media (max-width: 340px) {
+    h1 {
+        font-size: 40px;
+    }
+}

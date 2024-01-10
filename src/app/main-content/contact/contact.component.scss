@@ -458,6 +458,14 @@ button {
     .line {
         top: 36px;
     }
+
+    .confirm-area {
+        div {
+            p {
+                top: 60px;
+            }
+        }
+    }
 }
 
 @media (max-width: 1150px) {
@@ -568,5 +576,41 @@ button {
                 }
             }
         }
+    }
+
+    .confirm-area {
+        div {
+            p {
+                top: 40px;
+            }
+        }
+    }
+}
+
+@media (max-width: 724px) {
+    .confirm-area {
+        div {
+            p {
+                top: 60px;
+            }
+        }
+    }
+
+    .bg-img {
+        height: 600px;
+    }
+}
+
+@media (max-width: 509px) {
+    .confirm-area {
+        div {
+            p {
+                top: 80px;
+            }
+        }
+    }
+
+    .bg-img {
+        height: 500px;
     }
 }
