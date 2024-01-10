@@ -55,7 +55,7 @@ export class PortfolioComponent {
     {
       titel: "Ring of Fire",
       Languages: "Angular | Firebase | TypeScript",
-      describtion: "A simple Card game based on the Popular drink game.",
+      describtion: "A simple Card game based on the Popular drinking game.",
       image: "assets/img/portfolio/ring_of_fire.png",
       test: "https://ringoffire.nils-boelingen.de/index.html",
       github: "https://github.com/NilsBoelingen/ringoffire",
