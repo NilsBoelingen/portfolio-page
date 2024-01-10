@@ -160,6 +160,14 @@ app-portfolio-item {
     }
 
     .shadow-1 {
-        top: 1016px;
+        top: 940px;
+        left: 0;
+    }
+
+    .shadow-2 {
+        bottom: 360px;
+        width: 400px;
+        right: unset;
+        left: 160px;
     }
 }
