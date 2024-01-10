@@ -83,6 +83,7 @@ main {
 .menu-button {
   display: none;
   z-index: 99;
+  cursor: url('/assets/img/background/icons8-mauszeiger-pointer.png'), auto;
 }
 
 .dialog-menu {
@@ -118,6 +119,7 @@ main {
       font-weight: 400;
       line-height: 120%;
       text-decoration: none;
+      cursor: url('/assets/img/background/icons8-mauszeiger-pointer.png'), auto;
     }
   }
 }
