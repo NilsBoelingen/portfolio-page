@@ -36,11 +36,9 @@ $portfolio-page-theme: mat.define-light-theme((color: (primary: $portfolio-page-
   scrollbar-color: #fa7902 #1f2c47;
 }
 
-body {
-  div {
-    position: relative;
-    overflow: hidden;
-  }
+.main-content {
+  position: relative;
+  overflow: hidden;
 }
 
 *:hover {
