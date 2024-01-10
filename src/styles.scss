@@ -39,6 +39,7 @@ $portfolio-page-theme: mat.define-light-theme((color: (primary: $portfolio-page-
 .main-content {
   position: relative;
   overflow: hidden;
+  text-shadow: 2px 2px #1f2c47;
 }
 
 *:hover {
