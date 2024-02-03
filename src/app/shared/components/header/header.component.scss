@@ -132,7 +132,25 @@ main {
   transform: translateX(100%);
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 2800px) {
+  main {
+    padding: 37px 450px;
+  }
+}
+
+@media (min-width: 2450px) and (max-width: 2799px) {
+  main {
+    padding: 37px 350px;
+  }
+}
+
+@media (min-width: 2050px) and (max-width: 2449px) {
+  main {
+    padding: 37px 250px;
+  }
+}
+
+@media (min-width: 1920px) and (max-width: 2049px) {
   main {
     padding: 37px 150px;
   }

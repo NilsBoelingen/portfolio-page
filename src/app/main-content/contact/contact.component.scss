@@ -182,8 +182,8 @@ textarea {
             appearance: none;
             background-color: #141D2F;
             margin: 0;
-            width: 20px !important;
-            height: 20px !important;
+            width: 20px;
+            height: 20px;
             border-radius: 4px;
             display: grid;
             place-content: center;
@@ -379,7 +379,193 @@ button {
     overflow: hidden;
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 2800px) {
+  main {
+      padding: 0 450px 380px 450px;
+  }
+
+  .line {
+      width: 400px;
+      top: 72px;
+  }
+
+  .main-section {
+      width: 600px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+      width: 800px;
+      font-size: 24px;
+      padding: 20px 60px 20px 32px;
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    height: 28px;
+  }
+
+  .input-area{
+    img {
+      height: 34px;
+      width: 34px;
+    }
+  }
+
+  .error-img {
+    top: 18px;
+    right: 85px;
+  }
+
+  .error-text {
+    top: 78px;
+  }
+
+  .message-error-text {
+    top: 222px;
+  }
+
+  .arrow-up {
+      right: 150px;
+  }
+
+  h1 {
+    font-size: 120px;
+  }
+
+  h2 {
+    font-size: 48px;
+  }
+
+  span {
+    font-size: 24px;
+  }
+
+  .main-section {
+    width: 800px;
+  }
+
+  .confirm-area {
+    div {
+      span {
+        font-size: 20px;
+      }
+
+      input {
+        width: 24px !important;
+        height: 24px !important;
+      }
+    }
+  }
+}
+
+@media (min-width: 2450px) and (max-width: 2799px) {
+  main {
+      padding: 0 350px 480px 350px;
+  }
+
+  .line {
+      width: 300px;
+      top: 72px;
+  }
+
+  .main-section {
+      width: 600px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+      width: 800px;
+      font-size: 24px;
+      padding: 20px 60px 20px 32px;
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    height: 28px;
+  }
+
+  .input-area{
+    img {
+      height: 34px;
+      width: 34px;
+    }
+  }
+
+  .error-img {
+    top: 18px;
+    right: 85px;
+  }
+
+  .error-text {
+    top: 78px;
+  }
+
+  .message-error-text {
+    top: 222px;
+  }
+
+  .arrow-up {
+      right: 150px;
+  }
+
+  h1 {
+    font-size: 120px;
+  }
+
+  h2 {
+    font-size: 48px;
+  }
+
+  span {
+    font-size: 24px;
+  }
+
+  .main-section {
+    width: 800px;
+  }
+
+  .confirm-area {
+    div {
+      span {
+        font-size: 20px;
+      }
+
+      input {
+        width: 24px !important;
+        height: 24px !important;
+      }
+    }
+  }
+}
+
+@media (min-width: 2050px) and (max-width: 2449px) {
+  main {
+      padding: 0 250px 280px 250px;
+  }
+
+  .line {
+      width: 200px;
+  }
+
+  .main-section {
+      width: 600px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+      width: 800px;
+  }
+
+  .arrow-up {
+      right: 150px;
+  }
+}
+
+@media (min-width: 1920px) and (max-width: 2049px) {
     main {
         padding: 0 150px 180px 150px;
     }

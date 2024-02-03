@@ -93,6 +93,29 @@ section {
     align-items: end;
 }
 
+@media (min-width: 2450px) {
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  span {
+    font-size: 24px;
+  }
+
+  section {
+    max-width: 600px;
+    gap: 24px;
+  }
+
+  img {
+    height: 440px;
+  }
+}
+
 @media (max-width: 1393px) {
     img {
         height: 300px;
