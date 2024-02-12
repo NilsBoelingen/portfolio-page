@@ -42,6 +42,11 @@ $portfolio-page-theme: mat.define-light-theme((color: (primary: $portfolio-page-
   text-shadow: 2px 2px #1f2c47;
 }
 
+app-main-content {
+  display: flex;
+  flex-direction: column;
+}
+
 *:hover {
   cursor: url('/assets/img/background/icons8-mauszeiger.png'), auto;
 }
